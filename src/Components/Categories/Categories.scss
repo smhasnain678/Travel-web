@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Poppins:wght@200;400;500;700;900&display=swap');
+
+
+root{
+    --primaryColor: #B19470;
+    --primaryColorLight: #F8FAE5;
+    --bgColor:  hsl(0, 0%, 100%);
+    --formColor: #F8FAE5;
+    --whiteColor: #F8FAE5;
+    --blackColor: hsl(0, 0%, 18%);
+    --greyText: hsl(0, 0%, 51%);
+    --inputColor: hsl(330, 12%, 97%);
+    --cardColor: hsl(300, 3%, 94%);
+
+    /*Font and Typography*/
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 2rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0.813rem;
+    --smallestFontSize: 0.75rem;
+    --borderRadius: 3rem;
+}
+
+.category{
+    padding: 4.5rem 2rem 3rem;
+    .secContainer{
+        // margin-top: 2rem;
+        .textDiv{
+            h3{
+               font-size: x-large;
+               padding: 0 0 2rem 0;
+            }
+           .categoryContainer{
+            //  display: flex;
+            //  flex-direction: row;
+            //  flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            .singleCategory{
+                  
+                    // position: relative;
+                    // overflow: hidden;
+                    // border-radius: 1rem;
+                    // height: 100%;
+                    width: 100%;
+                    // background: #F8FAE5;
+                .imgDiv{
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 1rem;
+                    height: 150px;
+                    width: 18vh;
+                    background: #F8FAE5;
+                    // position: relative;
+                    // height: auto;
+                    // width: 100%;
+                    // height: 100%;
+                    // // width: 50%;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    .cateInfo{
+                        overflow-wrap: break-word;
+                        position: absolute;
+                        z-index: 2;
+                        bottom: 0;
+                        font-weight: 600;
+                        font-size: 1.5rem;
+                        width: 100%;
+                        color: white;
+                        padding: .5rem .5rem .5rem;
+
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            left: 0;
+                            bottom: 0;
+                            background: linear-gradient(
+                                to bottom,
+                                rgba(0,0,0,0),
+                                rgba(0,0,0,0.76)
+                            );
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+           } 
+        }
+    }
+}
+
+
+//Media Query
+
+@media screen and (min-width: 440px){
+    .category{
+        .secContainer{
+            .textDiv{
+                h3{
+                    padding: 0 0 2rem 0;
+                }
+                .categoryContainer{
+                    grid-template-columns: repeat(3,1fr);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px){
+    .category{
+        .secContainer{
+            .textDiv{
+                h3{
+                    // padding: 4rem 0;
+                    padding: 0 0 2rem 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 615px){
+    .category{
+        .secContainer{
+            .textDiv{
+                h3{
+                    padding: 0 0 2rem 0;
+                }
+                .categoryContainer{
+                    grid-template-columns: repeat(4,1fr);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 780px){
+    .category{
+        .secContainer{
+            .textDiv{
+                h3{
+                    padding: 0 0 2rem 0;
+                }
+                .categoryContainer{
+                    grid-template-columns: repeat(5,1fr);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 890px){
+    .category{
+        .secContainer{
+            .textDiv{
+                h3{
+                    padding: 0 0 2rem 0;
+                }
+                .categoryContainer{
+                    .singleCategory{
+                        width: 100%;
+
+                        .imgDiv{
+                           width: 100%;
+                           height: 23vh; 
+
+                           .cateInfo{
+                            overflow-wrap: break-word;
+                            position: absolute;
+                            z-index: 2;
+                            bottom: 0;
+                            font-weight: 600;
+                            font-size: 1.5rem;
+                            width: 100%;
+                            color: white;
+                            padding: .5rem .5rem .5rem;
+    
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                left: 0;
+                                bottom: 0;
+                                background: linear-gradient(
+                                    to bottom,
+                                    rgba(0,0,0,0),
+                                    rgba(0,0,0,50)
+                                );
+                                z-index: -1;
+                            }
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 966px){
+    .category{
+        //  padding: 1rem 0 3rem;
+        .secContainer{
+            .textDiv{
+                h3{
+                    padding: 0 0 2rem 0;
+                }
+                .categoryContainer{
+                    .singleCategory{
+                        width: 100%;
+
+                        .imgDiv{
+                           width: 100%;
+                           height: 25vh; 
+
+                           .cateInfo{
+                            overflow-wrap: break-word;
+                            position: absolute;
+                            z-index: 2;
+                            bottom: 0;
+                            font-weight: 600;
+                            font-size: 1.5rem;
+                            width: 100%;
+                            color: white;
+                            padding: .5rem .5rem .5rem;
+    
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                left: 0;
+                                bottom: 0;
+                                background: linear-gradient(
+                                    to bottom,
+                                    rgba(0,0,0,0),
+                                    rgba(0,0,0,50)
+                                );
+                                z-index: -1;
+                            }
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1240px){
+    .category{
+        padding: 1rem 0 3rem;
+        .secContainer{
+            .textDiv{
+                h3{
+                    padding: 0 0 2rem 0;
+                }
+                .categoryContainer{
+                    .singleCategory{
+                        width: 100%;
+
+                        .imgDiv{
+                           width: 100%;
+                           height: 35vh; 
+
+                           .cateInfo{
+                            overflow-wrap: break-word;
+                            position: absolute;
+                            z-index: 2;
+                            bottom: 0;
+                            font-weight: 600;
+                            font-size: 2rem;
+                            width: 100%;
+                            color: white;
+                            padding: .5rem .5rem .5rem;
+    
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                left: 0;
+                                bottom: 0;
+                                background: linear-gradient(
+                                    to bottom,
+                                    rgba(0,0,0,0),
+                                    rgba(0,0,0,50)
+                                );
+                                z-index: -1;
+                            }
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

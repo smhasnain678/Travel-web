@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Poppins:wght@200;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+root {
+  --primaryColor: #B19470;
+  --primaryColorLight: #F8FAE5;
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: #F8FAE5;
+  --whiteColor: #F8FAE5;
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  /*Font and Typography*/
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.writeReviews {
+  background: var(--primaryColorLight);
+}
+.writeReviews .reviewsSection .textDiv h1 {
+  font-size: 2.3rem;
+}
+.writeReviews .reviewsSection .textDiv p {
+  padding: 1rem 0;
+  font-size: var(--normalFontSize);
+}
+.writeReviews .reviewsSection .textDiv .inputField {
+  padding: 0.5rem;
+  background: white;
+  border-radius: var(--borderRadius);
+  border: 1.5px solid black;
+  gap: 0.5rem;
+}
+.writeReviews .reviewsSection .textDiv .inputField input {
+  outline: none;
+  border: none;
+  padding: 0.3rem;
+  width: 100%;
+  font-size: 1.3rem;
+}
+.writeReviews .reviewsSection .textDiv .inputField .icon {
+  font-size: 1.9rem;
+}
+.writeReviews .reviewsSection .clientReviews {
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.writeReviews .reviewsSection .clientReviews .reviewsText h3 {
+  padding: 1rem 0;
+}
+.writeReviews .reviewsSection .clientReviews .reviewsText p {
+  font-size: var(--normalFontSize);
+}
+.writeReviews .reviewsSection .clientReviews .reviewsText .star {
+  gap: 0.4rem;
+  padding: 1rem 0;
+}
+.writeReviews .reviewsSection .clientReviews .reviewsText .star .icon {
+  color: var(--primaryColor);
+  font-size: var(--h3FontSize);
+}
+.writeReviews .reviewsSection .clientReviews .reviewsText .clientImages {
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.writeReviews .reviewsSection .clientReviews .reviewsText .clientImages img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0 0 2px 2px #f0d2ad;
+}
+.writeReviews .reviewsSection .clientReviews .bigImage {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.writeReviews .reviewsSection .clientReviews .bigImage img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 480px) {
+  .writeReviews .reviewsSection .clientReviews .reviewsText h3 {
+    font-size: 20px;
+    color: var(--blackColor);
+  }
+  .writeReviews .reviewsSection .clientReviews .reviewsText p {
+    font-size: var(--normalFontSize);
+    color: var(--blackColor);
+  }
+  .writeReviews .reviewsSection .clientReviews .reviewsText .star .icon {
+    font-size: var(--h2FontSize);
+  }
+  .writeReviews .reviewsSection .clientReviews .reviewsText .clientImages img {
+    width: 50px;
+    height: 50px;
+  }
+  .writeReviews .reviewsSection .clientReviews .bigImage {
+    height: 250px;
+    width: 100%;
+  }
+  .writeReviews .reviewsSection .clientReviews .bigImage img {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 740px) {
+  .writeReviews .reviewsSection .clientReviews {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .writeReviews .reviewsSection .clientReviews .reviewsText h3 {
+    font-size: 20px;
+  }
+  .writeReviews .reviewsSection .clientReviews .reviewsText p {
+    font-size: var(--normalFontSize);
+    color: var(--blackColor);
+  }
+  .writeReviews .reviewsSection .clientReviews .reviewsText .star .icon {
+    font-size: var(--h2FontSize);
+  }
+  .writeReviews .reviewsSection .clientReviews .reviewsText .clientImages img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .writeReviews .reviewsSection .textDiv h1 {
+    text-align: center;
+    font-size: 37px;
+  }
+  .writeReviews .reviewsSection .textDiv p {
+    text-align: center;
+    font-size: var(--h2FontSize);
+    padding: 2.5rem 25rem;
+  }
+  .writeReviews .reviewsSection .textDiv .inputField {
+    margin: auto;
+    width: 65%;
+  }
+  .writeReviews .reviewsSection .textDiv .inputField input {
+    width: 100%;
+  }
+  .writeReviews .reviewsSection .clientReviews {
+    gap: 3rem;
+  }
+  .writeReviews .reviewsSection .clientReviews .reviewsText h3 {
+    font-size: var(--h1FontSize);
+    color: var(--blackColor);
+  }
+  .writeReviews .reviewsSection .clientReviews .reviewsText p {
+    font-size: var(--h3FontSize);
+    color: var(--blackColor);
+    line-height: 2rem;
+  }
+  .writeReviews .reviewsSection .clientReviews .bigImage {
+    height: 300px;
+  }
+}/*# sourceMappingURL=Gallery.css.map */

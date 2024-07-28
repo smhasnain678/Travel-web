@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Poppins:wght@200;400;500;700;900&display=swap');
+
+
+root{
+    --primaryColor: #B19470;
+    --primaryColorLight: #F8FAE5;
+    --bgColor:  hsl(0, 0%, 100%);
+    --formColor: #F8FAE5;
+    --whiteColor: #F8FAE5;
+    --blackColor: hsl(0, 0%, 18%);
+    --greyText: hsl(0, 0%, 51%);
+    --inputColor: hsl(330, 12%, 97%);
+    --cardColor: hsl(300, 3%, 94%);
+
+    /*Font and Typography*/
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 2rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0.813rem;
+    --smallestFontSize: 0.75rem;
+    --borderRadius: 3rem;
+}
+.whyus{
+    background-image: url("../../Assests/image24.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .whyusSection{
+        // margin-top: 2rem;
+        .hiking{
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            padding-top: 1rem;
+            img{
+                background: #B19470;
+                border-radius: 50%;
+                height: auto;
+                width: 80px;
+            }
+            .hikingInfo{
+                color: white;
+            }
+            h3{
+                padding: .5rem 0;
+            }
+            p{
+                letter-spacing: 1px;
+                padding: 0rem 1.5rem;
+            }
+        }
+        .tours{
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            padding: 3.5rem 0;
+            img{
+                background: #a8b170;
+                border-radius: 50%;
+                height: auto;
+                width: 80px;
+            }
+            .toursInfo{
+                color: white;
+            }
+            h3{
+                padding: .5rem 0;
+            }
+            p{
+                letter-spacing: 1px;
+                padding: 0rem 1.5rem;
+            }
+        }
+        .costumer{
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            padding-top: 1rem;
+            img{
+                background: #57e8e8;
+                border-radius: 50%;
+                height: auto;
+                width: 80px;
+            }
+            .costumerInfo{
+                color: white;
+            }
+            h3{
+                padding: .5rem 0;
+            }
+            p{
+                letter-spacing: 1px;
+                padding: 0rem 1.5rem;
+            }
+        }
+    }
+}
+
+
+//Media Query
+
+@media screen and (min-width:480px){
+    .whyus{
+        width: 100%;
+        height: 110vh;
+        .whyusSection{
+            .hiking{
+                padding-top: 2.5rem;
+                img{
+                    height: auto;
+                    width:90px;
+                }
+
+                .hikingInfo{
+                    h3{
+                        padding: .8rem 0;
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 1rem;
+                        padding: 0 2.5rem;
+                    }
+                }
+            }
+
+            .tours{
+                // padding-top: 2.5rem;
+                img{
+                    height: auto;
+                    width:90px;
+                }
+                h3{
+                    padding: .8rem 0;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 1rem;
+                    padding: 0 2.5rem;
+                }
+            }
+
+            .costumer{
+                margin-bottom: 5rem;
+               
+                img{
+                    height: auto;
+                    width:90px;
+                }
+                h3{
+                    padding: .8rem 0;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 1rem;
+                    padding: 0 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 840px){
+    .whyus{
+        height: 120vh;
+        .whyusSection{
+            .hiking{
+                padding-top: 2.5rem;
+                img{
+                    height: auto;
+                    width: 110px;
+                }
+
+                .hikingInfo{
+                    h3{
+                        padding: .8rem 0;
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 1rem;
+                        padding: 0 2.5rem;
+                    }
+                }
+            }
+
+            .tours{
+                padding: 5rem 0;
+                img{
+                    height: auto;
+                    width: 110px;
+                }
+                h3{
+                    padding: .8rem 0;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 1rem;
+                    padding: 0 2.5rem;
+                }
+            }
+
+            .costumer{
+                margin-bottom: 5rem;
+               
+                img{
+                    height: auto;
+                    width: 110px;
+                }
+                h3{
+                    padding: .8rem 0;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 1rem;
+                    padding: 0 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 966px){
+    .whyus{
+        width: 100%;
+        height: 60vh;
+           .whyusSection{
+               display: flex;
+               flex-direction: row;
+
+            .hiking{
+                padding: 3.5rem 0;
+            }  
+            
+            .tours{
+                padding: 3.5rem 0;
+            }
+
+            .costumer{
+                padding: 3.5rem 0;
+            }
+        }
+    }
+}
+

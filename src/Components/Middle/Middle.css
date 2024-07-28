@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Poppins:wght@200;400;500;700;900&display=swap");
+root {
+  --primaryColor: #B19470;
+  --primaryColorLight: #F8FAE5;
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: #F8FAE5;
+  --whiteColor: #F8FAE5;
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  /*Font and Typography*/
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.middle .secContainer h3 {
+  font-size: var(--h1FontSize);
+}
+.middle .secContainer .searchField {
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.middle .secContainer .searchField .inputField {
+  background: var(--primaryColorLight);
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: var(--borderRadius);
+}
+.middle .secContainer .searchField .inputField input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.middle .secContainer .searchField .inputField .icon {
+  color: var(--blackColor);
+}
+.middle .secContainer .searchField .btn {
+  gap: 0.5rem;
+  margin: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.middle .secMenu {
+  display: none;
+}
+.middle .destinationContainer {
+  margin-top: 2rem;
+}
+.middle .destinationContainer .singleDestination {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  height: 260px;
+}
+.middle .destinationContainer .singleDestination .imgDiv {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.middle .destinationContainer .singleDestination .imgDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.middle .destinationContainer .singleDestination:hover .imgDiv img {
+  scale: 1.1;
+}
+.middle .destinationContainer .singleDestination .descInfo {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 2rem 1rem;
+  justify-content: space-between;
+}
+.middle .destinationContainer .singleDestination .descInfo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.76));
+  z-index: -1;
+}
+.middle .destinationContainer .singleDestination .descInfo .text {
+  gap: 0.5rem;
+  color: var(--whiteColor);
+}
+.middle .destinationContainer .singleDestination .descInfo .text .name {
+  display: block;
+  font-weight: 500;
+  padding-bottom: 0.3rem;
+  font-weight: var(--h2FontSize);
+}
+.middle .destinationContainer .singleDestination .descInfo .text .flex, .middle .destinationContainer .singleDestination .descInfo .text .icon {
+  font-size: 13px;
+}
+.middle .destinationContainer .singleDestination .descInfo .rating {
+  padding: 8px 1rem;
+  border-radius: var(--borderRadius);
+  background-color: rgba(245, 245, 245, 0.37);
+  font-size: var(--h3FontSize);
+  font-weight: 600;
+  color: var(--whiteColor);
+}
+
+@media screen and (min-width: 520px) {
+  .middle .secContainer .searchField {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .middle .destinationContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 640px) {
+  .middle .secContainer .searchField {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .middle .destinationContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1014px) {
+  .middle .secContainer .secTitle h3 {
+    font-size: 2.5rem;
+  }
+  .middle .secContainer .searchField {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (min-width: 1148px) {
+  .middle .secContainer .secTitle h3 {
+    font-size: 2.5rem;
+  }
+  .middle .destinationContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .middle .destinationContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .middle .destinationContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}/*# sourceMappingURL=Middle.css.map */
